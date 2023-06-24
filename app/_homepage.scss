@@ -1,0 +1,55 @@
+._main {
+  @apply h-screen;
+
+  ._row {
+    &._first {
+      @apply bg-blue-500 p-8 h-[60vh];
+
+      ._wrapper_content {
+        @apply flex h-full;
+
+        ._content_info {
+          @apply flex  items-center;
+
+          ._wrapper_text {
+            @apply max-w-md;
+          }
+        }
+        ._content_form {
+          @apply bg-green-500 relative;
+        }
+      }
+    }
+  }
+}
+
+._container {
+  @apply container mx-auto;
+}
+
+._logo {
+  @apply text-3xl font-bold text-white;
+}
+
+// START CARD
+._card {
+  @apply bg-white drop-shadow-2xl min-w-[500px] absolute rounded-[15px] p-8;
+}
+
+// Typhography
+
+.heading_primary {
+  @apply text-5xl font-bold  mb-2;
+}
+
+.heading_secondary {
+  @apply text-2xl font-medium  mb-2;
+}
+
+.subheading_primary {
+  @apply text-2xl   mb-5;
+}
+
+.text_regular {
+  @apply text-lg;
+}
