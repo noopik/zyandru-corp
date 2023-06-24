@@ -1,5 +1,5 @@
 ._user_detail_wrapper {
-  @apply bg-white p-12 rounded-2xl min-w-[500px] flex flex-col drop-shadow-2xl items-center mb-8;
+  @apply bg-white sm:p-6 lg:p-12 rounded-2xl min-w-max md:min-w-[250px] lg:min-w-[500px] flex flex-col drop-shadow-2xl items-center mb-8;
 
   ._description {
     @apply flex flex-col items-center mt-5;

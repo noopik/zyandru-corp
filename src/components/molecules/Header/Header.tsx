@@ -9,7 +9,7 @@ const Header = () => {
   const actionLogout = () => router.push('/');
 
   return (
-    <div className="_header_wrapper">
+    <div className="_header_wrapper __test__responsive">
       <h1 className="_text_header">List Users</h1>
       <Button onClick={actionLogout} variant="secondary">
         Logout
