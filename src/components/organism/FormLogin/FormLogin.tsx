@@ -19,8 +19,8 @@ const FormLogin = () => {
     <>
       <div className="_card">
         <div className="_head">
-          <p>
-            Welcome to <span className="text_color_primary">LOREM</span>
+          <p className="hidden sm:block md:hidden lg:block">
+            Welcome to <span className="text_color_primary">Zyandru Corp</span>
           </p>
           <p>
             No Account ?{' '}

@@ -1,13 +1,13 @@
 // START CARD
 ._card {
-  @apply bg-white drop-shadow-2xl min-w-[500px] top-52 absolute rounded-[15px] p-8;
+  @apply md:absolute bg-white drop-shadow-2xl md:left-0 lg:left-20 xl:left-52 2xl:left-24 md:min-w-[350px] lg:min-w-[500px] md:top-20 2xl:top-36 rounded-[15px] p-4 md:p-8;
 
   ._head {
-    @apply flex justify-between mb-4;
+    @apply flex justify-between mb-2 md:mb-4;
   }
 
   ._title_sign_in {
-    @apply text-5xl font-semibold mb-8;
+    @apply text-4xl md:text-5xl font-semibold mb-4 md:mb-8;
   }
 
   ._forgot_password {

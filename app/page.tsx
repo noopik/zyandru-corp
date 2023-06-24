@@ -2,7 +2,6 @@ import { Logo } from '@vhiweb/src/components/atoms';
 import Image from 'next/image';
 import React from 'react';
 import { FormLogin } from '../src/components/organism';
-
 /**
  * Renders the Login page.
  *
@@ -10,7 +9,7 @@ import { FormLogin } from '../src/components/organism';
  */
 const Login: React.FC = (): JSX.Element => {
   return (
-    <main className="_main">
+    <main className="_main_auth_page">
       <div className="_row _first">
         <div className="_container h-full flex flex-col">
           <Logo />
@@ -19,12 +18,12 @@ const Login: React.FC = (): JSX.Element => {
               <div className="_wrapper_text">
                 <p className="heading_primary text-white">Sign in to </p>
                 <p className="subheading_primary text-white">
-                  Lorem Ipsum is simply{' '}
+                  Welcome to Zyandru Corp's login page!
                 </p>
                 <p className="text_regular text-white">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s,
+                  Securely access your account with Zyandru Corp's login page.
+                  Thank you for choosing Zyandru Corp! We value your trust and
+                  loyalty.
                 </p>
               </div>
               <div className="_wrapper_images">
@@ -43,7 +42,7 @@ const Login: React.FC = (): JSX.Element => {
         </div>
       </div>
       <div className="_row">
-        <div className="_container py-8">
+        <div className="_container p-8 md:py-8">
           <h6 className="heading_secondary">Login as</h6>
         </div>
       </div>

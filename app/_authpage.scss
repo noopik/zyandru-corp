@@ -1,0 +1,28 @@
+._main_auth_page {
+  @apply h-auto md:h-screen;
+
+  ._row {
+    &._first {
+      @apply bg-blue-500 p-8 h-auto md:h-[50vh] lg:h-[60vh];
+
+      ._wrapper_content {
+        @apply md:flex lg:mt-8 xl:mt-2 md:mt-0 md:h-full;
+
+        ._content_info {
+          @apply md:mt-8 md:max-w-[350px] lg:max-w-none xl:flex  items-center;
+
+          ._wrapper_text {
+            @apply max-w-md mb-8 md:mb-0;
+          }
+
+          ._wrapper_images {
+            @apply hidden 2xl:block;
+          }
+        }
+        ._content_form {
+          @apply relative;
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ import './logo.style.scss';
 const Logo = () => {
   return (
     <Link href="/" className="_logo">
-      LOREM VHIWEB
+      Zyandru Corp
     </Link>
   );
 };

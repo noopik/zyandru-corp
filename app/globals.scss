@@ -2,8 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Custom Components */
-@import './homepage';
+/* Styling Pages */
+@import './authpage';
 
 body {
   @apply font-sans;
@@ -33,4 +33,9 @@ body {
 
 .text_color_primary {
   @apply text-blue-500 font-medium;
+}
+
+// TEST RESPONSIVE
+.__test__responsive {
+  @apply bg-purple-400 sm:bg-cyan-400 md:bg-yellow-400 lg:bg-green-400 xl:bg-blue-400 2xl:bg-pink-400;
 }
