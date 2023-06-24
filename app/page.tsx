@@ -1,5 +1,5 @@
+import { Logo } from '@vhiweb/src/components/atoms';
 import Image from 'next/image';
-import Link from 'next/link';
 import React from 'react';
 import { FormLogin } from '../src/components/organism';
 
@@ -13,9 +13,7 @@ const Login: React.FC = (): JSX.Element => {
     <main className="_main">
       <div className="_row _first">
         <div className="_container h-full flex flex-col">
-          <Link href="#" className="_logo">
-            LOREM VHIWEB
-          </Link>
+          <Logo />
           <div className="_wrapper_content">
             <div className="_content_info">
               <div className="_wrapper_text">

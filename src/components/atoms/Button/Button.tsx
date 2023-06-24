@@ -10,6 +10,7 @@ type ButtonProps = {
   className?: string;
   fullWidth?: boolean;
   onClick: React.MouseEventHandler<HTMLButtonElement>;
+  disabled?: boolean;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -20,6 +21,7 @@ const Button: React.FC<ButtonProps> = ({
   className,
   fullWidth,
   onClick,
+  disabled,
   ...props
 }): JSX.Element => {
   const variantList: Record<string, string> = {
@@ -31,8 +33,10 @@ const Button: React.FC<ButtonProps> = ({
     <button
       className={`_btn ${variantList[variant]} ${className} ${
         fullWidth && `_full_width`
-      }`}
+      }  ${disabled && '_disabled'}`}
       onClick={onClick}
+      disabled={disabled}
+      {...props}
     >
       {icon && (
         <Image

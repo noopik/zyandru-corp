@@ -1,3 +1,5 @@
+'use client';
+
 import './styles.scss';
 import React from 'react';
 
@@ -7,6 +9,9 @@ type TextInputProps = {
   name: string;
   type: string;
   placeholder: string;
+  onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  value: string;
+  isError?: boolean;
 };
 
 const TextInput = ({
@@ -15,6 +20,9 @@ const TextInput = ({
   name,
   type,
   placeholder,
+  onChange,
+  value,
+  isError,
   ...props
 }: TextInputProps): JSX.Element => {
   return (
@@ -27,9 +35,12 @@ const TextInput = ({
         id={id}
         name={name}
         placeholder={placeholder}
-        className="_input"
+        className={`_input ${isError && '_field_error'}`}
+        onChange={onChange}
+        value={value}
         {...props}
       />
+      {isError && <span className="_text_error">Lengkapi data</span>}
     </div>
   );
 };
