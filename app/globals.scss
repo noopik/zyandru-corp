@@ -9,6 +9,10 @@ body {
   @apply font-sans;
 }
 
+._container {
+  @apply container mx-auto;
+}
+
 // Typhography
 
 .heading_primary {
@@ -25,4 +29,8 @@ body {
 
 .text_regular {
   @apply text-lg;
+}
+
+.text_color_primary {
+  @apply text-blue-500 font-medium;
 }

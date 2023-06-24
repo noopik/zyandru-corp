@@ -1,3 +1,4 @@
 import FormLogin from './FormLogin/FormLogin';
+import ListUsers from './ListUsers/ListUsers';
 
-export { FormLogin };
+export { FormLogin, ListUsers };

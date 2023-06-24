@@ -1,20 +1,24 @@
+'use client';
+
 import Link from 'next/link';
 import React from 'react';
 import { Button, TextInput } from '../../atoms';
 import { ButtonGroupOAuth } from '../../molecules';
 import './form-login.style.scss';
+import { useFormLogin } from '@vhiweb/src/hooks';
 
 const FormLogin = () => {
+  const { actionSignIn } = useFormLogin();
   return (
     <>
       <div className="_card">
         <div className="_head">
           <p>
-            Welcome to <span className="text-blue-500 font-medium">LOREM</span>
+            Welcome to <span className="text_color_primary">LOREM</span>
           </p>
           <p>
             No Account ?{' '}
-            <Link href="" className="text-blue-500 font-medium">
+            <Link href="" className="text_color_primary">
               Sign up
             </Link>
           </p>
@@ -40,7 +44,7 @@ const FormLogin = () => {
             <Link href="#">Forgot Password</Link>
           </div>
           {/* <button className="signIn">Sign in</button> */}
-          <Button variant="primary" fullWidth>
+          <Button variant="primary" fullWidth onClick={actionSignIn}>
             Sign in
           </Button>
         </div>

@@ -14,7 +14,7 @@ const Login: React.FC = (): JSX.Element => {
       <div className="_row _first">
         <div className="_container h-full flex flex-col">
           <Link href="#" className="_logo">
-            Your Logo
+            LOREM VHIWEB
           </Link>
           <div className="_wrapper_content">
             <div className="_content_info">

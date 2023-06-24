@@ -9,6 +9,7 @@ type ButtonProps = {
   variant: 'secondary' | 'primary';
   className?: string;
   fullWidth?: boolean;
+  onClick: React.MouseEventHandler<HTMLButtonElement>;
 };
 
 const Button: React.FC<ButtonProps> = ({
@@ -18,6 +19,7 @@ const Button: React.FC<ButtonProps> = ({
   variant,
   className,
   fullWidth,
+  onClick,
   ...props
 }): JSX.Element => {
   const variantList: Record<string, string> = {
@@ -27,9 +29,10 @@ const Button: React.FC<ButtonProps> = ({
 
   return (
     <button
-      className={`flex justify-center items-center gap-3 p-2 ${
-        variantList[variant]
-      } ${className} ${fullWidth && `_full_width`}`}
+      className={`_btn ${variantList[variant]} ${className} ${
+        fullWidth && `_full_width`
+      }`}
+      onClick={onClick}
     >
       {icon && (
         <Image

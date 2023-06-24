@@ -11,11 +11,17 @@ const ButtonGroupOAuth: React.FC<{ className?: string }> = ({
         icon="ic-google.svg"
         alt="icon-google"
         variant="secondary"
-        className="flex-1"
+        fullWidth
+        onClick={() => console.log('Feature under development')}
       >
         Sign in with Google
       </Button>
-      <Button icon="ic-Facebook.svg" alt="icon-Facebook" variant="secondary" />
+      <Button
+        icon="ic-Facebook.svg"
+        alt="icon-Facebook"
+        variant="secondary"
+        onClick={() => console.log('Feature under development')}
+      />
     </div>
   );
 };

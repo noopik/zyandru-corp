@@ -1,0 +1,15 @@
+._user_detail_wrapper {
+  @apply bg-white p-12 rounded-2xl min-w-[500px] flex flex-col drop-shadow-2xl items-center mb-8;
+
+  ._description {
+    @apply flex flex-col items-center mt-5;
+
+    ._name {
+      @apply text-2xl font-bold;
+    }
+
+    ._email {
+      @apply text-base text-gray-500;
+    }
+  }
+}
