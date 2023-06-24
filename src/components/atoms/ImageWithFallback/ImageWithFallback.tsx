@@ -19,7 +19,7 @@ const ImageWithFallback = ({
   const [imgSrc, setImgSrc] = useState<string>(src);
 
   return (
-    <div className="relative w-[62px] h-[62px]">
+    <div className="relative">
       <Image
         src={imgSrc}
         onError={() => {
