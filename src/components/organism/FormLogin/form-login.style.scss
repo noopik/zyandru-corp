@@ -1,0 +1,20 @@
+// START CARD
+._card {
+  @apply bg-white drop-shadow-2xl min-w-[500px] top-52 absolute rounded-[15px] p-8;
+
+  ._head {
+    @apply flex justify-between mb-4;
+  }
+
+  ._title_sign_in {
+    @apply text-5xl font-semibold mb-8;
+  }
+
+  ._forgot_password {
+    @apply flex justify-end text-blue-500 mb-5;
+  }
+}
+
+.signIn {
+  @apply text-blue-300;
+}

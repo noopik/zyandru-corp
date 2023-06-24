@@ -1,7 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import React from 'react';
+import { FormLogin } from '../src/components/organism';
 
-export default function Home() {
+/**
+ * Renders the Login page.
+ *
+ * @returns The Login page component.
+ */
+const Login: React.FC = (): JSX.Element => {
   return (
     <main className="_main">
       <div className="_row _first">
@@ -32,57 +39,7 @@ export default function Home() {
               </div>
             </div>
             <div className="_content_form">
-              <div className="_card">
-                <div className="flex justify-between">
-                  <p>
-                    Welcome to{' '}
-                    <span className="text-blue-500 font-medium">LOREM</span>
-                  </p>
-                  <p>
-                    No Account ?{' '}
-                    <Link href="" className="text-blue-500 font-medium">
-                      Sign up
-                    </Link>
-                  </p>
-                </div>
-                <h1 className="heading_secondary">Sign in</h1>
-                <div className="flex gap-4 rounded-md">
-                  <button className="bg-blue-100 text-blue-500 flex justify-center items-center gap-3 p-2 flex-1">
-                    <Image
-                      src="/assets/icons/ic-google.svg"
-                      alt="icon-facebook"
-                      width={24}
-                      height={24}
-                    />
-                    Sign in with Google
-                  </button>
-                  <button className="bg-blue-100 p-4 rounded-md">
-                    <Image
-                      src="/assets/icons/ic-Facebook.svg"
-                      alt="icon-facebook"
-                      width={24}
-                      height={24}
-                    />
-                  </button>
-                </div>
-                <div>
-                  <div>
-                    <label>Enter your username or email address</label>
-                    <input
-                      type="text"
-                      placeholder="Username or email address"
-                    />
-                  </div>
-                  <div>
-                    <label>Enter your Password</label>
-                    <input type="password" placeholder="Password" />
-                  </div>
-                  <div>
-                    <Link href="#">Forgot Password</Link>
-                  </div>
-                  <button>Sign in</button>
-                </div>
-              </div>
+              <FormLogin />
             </div>
           </div>
         </div>
@@ -94,4 +51,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default Login;

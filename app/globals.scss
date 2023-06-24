@@ -8,3 +8,21 @@
 body {
   @apply font-sans;
 }
+
+// Typhography
+
+.heading_primary {
+  @apply text-5xl font-bold  mb-2;
+}
+
+.heading_secondary {
+  @apply text-3xl font-medium  mb-2;
+}
+
+.subheading_primary {
+  @apply text-2xl   mb-5;
+}
+
+.text_regular {
+  @apply text-lg;
+}
