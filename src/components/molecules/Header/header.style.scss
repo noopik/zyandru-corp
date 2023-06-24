@@ -1,5 +1,5 @@
 ._header_wrapper {
-  @apply bg-blue-500 p-8 rounded-lg mb-8;
+  @apply bg-blue-500 p-8 rounded-lg mb-8 flex justify-between;
 
   ._text_header {
     @apply text-white text-2xl font-bold;
