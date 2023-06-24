@@ -7,6 +7,9 @@ import { ButtonGroupOAuth } from '../../molecules';
 import './form-login.style.scss';
 import { useFormLogin } from '@vhiweb/src/hooks';
 import { useStoreFormLogin } from '@vhiweb/src/store';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 const FormLogin = () => {
   const { actionSignIn, handleInputChange, isLoading } = useFormLogin();
@@ -60,6 +63,18 @@ const FormLogin = () => {
           Sign in
         </Button>
       </div>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 };

@@ -1,6 +1,7 @@
 import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
 import { create } from 'zustand';
 import axiosConfig from '../config/axios';
+import { toast } from 'react-toastify';
 
 interface FormLoginInterface {
   form: {
@@ -39,11 +40,24 @@ const useStoreFormLogin = create<FormLoginInterface>((set) => ({
   actionPostLogin: (data, router, setIsLoading) => {
     setIsLoading(true);
     axiosConfig
-      .post('/users', data)
+      .post('/login', data)
       .then((res) => {
         router.replace('/users');
       })
-      .catch((err) => {})
+      .catch((err) => {
+        const message = err?.response?.data?.error ?? 'Server error';
+
+        return toast.error(message, {
+          position: 'top-right',
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: 'dark',
+        });
+      })
       .finally(() => {
         setIsLoading(false);
       });
