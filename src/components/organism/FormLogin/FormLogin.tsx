@@ -24,7 +24,7 @@ const FormLogin = () => {
           </p>
           <p>
             No Account ?{' '}
-            <Link href="" className="text_color_primary">
+            <Link href="/register" className="text_color_primary">
               Sign up
             </Link>
           </p>
@@ -52,7 +52,7 @@ const FormLogin = () => {
           isError={isFormInvalid && !form['password']}
         />
         <div className="_forgot_password">
-          <Link href="#">Forgot Password</Link>
+          <Link href="/forgot-password">Forgot Password</Link>
         </div>
         <Button
           variant="primary"
