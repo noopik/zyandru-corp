@@ -1,10 +1,9 @@
 'use client';
 
-import Image from 'next/image';
-import React from 'react';
-import './user-detail.styles.scss';
-import { ImageWithFallback } from '../../atoms';
 import { defaultImageNotFound } from '@vhiweb/src/constants/common';
+import React from 'react';
+import { ImageWithFallback } from '../../atoms';
+import './user-detail.styles.scss';
 
 const UserDetail: React.FC<{
   photoUrl: string;
@@ -14,15 +13,16 @@ const UserDetail: React.FC<{
   const onLoad = () => photoUrl;
   return (
     <div className="_user_detail_wrapper">
-      <ImageWithFallback
-        loader={onLoad}
-        priority
-        src={photoUrl}
-        alt={photoUrl}
-        fallbackSrc={defaultImageNotFound}
-        width={200}
-        height={200}
-      />
+      <div className="_wrapper_image">
+        <ImageWithFallback
+          loader={onLoad}
+          priority
+          src={photoUrl}
+          alt={photoUrl}
+          fallbackSrc={defaultImageNotFound}
+          fill={true}
+        />
+      </div>
       <div className="_description">
         <h3 className="_name">{name}</h3>
         <p className="_email">{email}</p>

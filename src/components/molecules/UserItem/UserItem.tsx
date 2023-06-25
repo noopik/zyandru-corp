@@ -25,6 +25,7 @@ const UserItem: React.FC<{
         fallbackSrc={defaultImageNotFound}
         width={62}
         height={62}
+        className="rounded-lg"
       />
       <div>
         <h3 className="text-xl font-medium">{name}</h3>

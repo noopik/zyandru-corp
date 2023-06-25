@@ -8,32 +8,32 @@ const ImageWithFallback = ({
   fallbackSrc,
   width,
   height,
+  className,
   ...rest
 }: {
   src: string;
   fallbackSrc: string;
-  width: number;
-  height: number;
+  className?: string;
+  width?: number;
+  height?: number;
   [key: string]: any;
 }): JSX.Element => {
   const [imgSrc, setImgSrc] = useState<string>(src);
 
   return (
-    <div className="relative">
-      <Image
-        src={imgSrc}
-        onError={() => {
-          setImgSrc(fallbackSrc);
-        }}
-        alt={rest.alt}
-        placeholder="blur"
-        blurDataURL="/assets/images/img-blur.avif"
-        className="rounded-lg"
-        width={width}
-        height={height}
-        {...rest}
-      />
-    </div>
+    <Image
+      src={imgSrc}
+      onError={() => {
+        setImgSrc(fallbackSrc);
+      }}
+      alt={rest.alt}
+      placeholder="blur"
+      blurDataURL="/assets/images/img-blur.avif"
+      className={className}
+      width={width}
+      height={height}
+      {...rest}
+    />
   );
 };
 

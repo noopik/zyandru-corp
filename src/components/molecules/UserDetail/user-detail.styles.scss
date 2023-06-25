@@ -1,8 +1,16 @@
 ._user_detail_wrapper {
-  @apply bg-white sm:p-6 lg:p-12 rounded-2xl min-w-max md:min-w-[250px] lg:min-w-[500px] flex flex-col drop-shadow-2xl items-center mb-8;
+  @apply bg-white rounded-2xl min-w-max md:w-[500px] flex flex-col drop-shadow-2xl items-center mb-8;
+
+  ._wrapper_image {
+    @apply relative h-[300px] w-full;
+
+    img {
+      @apply rounded-t-lg object-cover;
+    }
+  }
 
   ._description {
-    @apply flex flex-col items-center mt-5;
+    @apply flex flex-col p-4 items-center m-0;
 
     ._name {
       @apply text-2xl font-bold;

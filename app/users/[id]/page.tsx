@@ -1,6 +1,7 @@
 import { ButtonGoBack } from '@vhiweb/src/components/atoms';
 import { UserDetail } from '@vhiweb/src/components/molecules';
 import axiosConfig from '@vhiweb/src/config/axios';
+import './_page.scss';
 
 export default async function DetailUser({
   params,
@@ -10,16 +11,14 @@ export default async function DetailUser({
   const { data: user } = await getDataUser(params.id);
 
   return (
-    <main className="h-screen">
-      <div className="bg-gray-100 h-full flex justify-center items-center">
-        <div>
-          <UserDetail
-            photoUrl={user?.avatar}
-            email={user?.email}
-            name={`${user.first_name} ${user.last_name}`}
-          />
-          <ButtonGoBack />
-        </div>
+    <main className="_detail_user_page">
+      <div className="_content">
+        <UserDetail
+          photoUrl={user?.avatar}
+          email={user?.email}
+          name={`${user.first_name} ${user.last_name}`}
+        />
+        <ButtonGoBack />
       </div>
     </main>
   );

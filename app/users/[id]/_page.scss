@@ -1,0 +1,7 @@
+._detail_user_page {
+  @apply h-screen bg-gray-100 flex justify-center items-center;
+
+  ._content {
+    @apply w-full mx-5 md:mx-0 md:w-fit;
+  }
+}
