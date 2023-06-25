@@ -3,7 +3,7 @@ import { Inter } from 'next/font/google';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Users',
+  title: 'Zyandru | Users',
   description: 'Show user list',
 };
 

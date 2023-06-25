@@ -20,7 +20,7 @@ export const generateMetadata = async (props: Props): Promise<Metadata> => {
   const title =
     `${res.data.data.first_name} ${res.data.data.last_name}` ?? 'User';
   return {
-    title,
+    title: `Zyandru | ${title}`,
   };
 };
 
