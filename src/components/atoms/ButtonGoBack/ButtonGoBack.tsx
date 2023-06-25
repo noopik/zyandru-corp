@@ -11,7 +11,7 @@ const ButtonGoBack = () => {
 
   return (
     <Button variant="primary" fullWidth onClick={handleBack}>
-      Kembali
+      Back
     </Button>
   );
 };
