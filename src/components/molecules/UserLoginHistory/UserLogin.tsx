@@ -40,7 +40,7 @@ const UserLogin = ({
       )}
       <Link
         href={isUserLoggedIn ? '/users' : 'https://reqres.in/'}
-        target="_blank"
+        target={isUserLoggedIn ? '_self' : '_blank'}
       >
         <div
           className={`${

@@ -32,7 +32,7 @@ const Button: React.FC<ButtonProps> = ({
   return (
     <button
       className={`_btn ${variantList[variant]} ${className} ${
-        fullWidth && `_full_width`
+        fullWidth && `w-full`
       }  ${disabled && '_disabled'}`}
       onClick={onClick}
       disabled={disabled}

@@ -1,5 +1,5 @@
 ._btn {
-  @apply flex justify-center items-center gap-3 p-2 hover:opacity-70;
+  @apply flex justify-center items-center gap-3 p-2 hover:opacity-70 rounded-md;
 
   &._disabled {
     @apply bg-gray-300 hover:opacity-100 text-gray-400;
@@ -12,8 +12,4 @@
 
 ._secondary {
   @apply bg-blue-100 text-blue-500;
-}
-
-._full_width {
-  @apply w-full rounded-md;
 }
