@@ -16,7 +16,7 @@ const UserItem: React.FC<{
   const onLoad = () => photoUrl;
 
   return (
-    <Link href={`/users/${id}`} className="_wrapper_user">
+    <Link href={`/users/${id}`} className="_wrapper_user _animate">
       <ImageWithFallback
         loader={onLoad}
         priority
