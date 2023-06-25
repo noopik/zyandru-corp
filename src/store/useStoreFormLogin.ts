@@ -46,6 +46,8 @@ const useStoreFormLogin = create<FormLoginInterface>((set) => ({
       .post('/login', data)
       .then((res) => {
         addUser(data['email'], data['password']);
+
+        set({ form: { email: '', password: '' } });
         router.replace('/users');
       })
       .catch((err) => {
