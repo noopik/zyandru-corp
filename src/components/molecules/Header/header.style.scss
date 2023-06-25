@@ -1,7 +1,7 @@
 ._header_wrapper {
-  @apply bg-blue-500 p-4 lg:p-8 rounded-lg mb-8 flex justify-between;
+  @apply bg-blue-500 p-3 lg:p-4 rounded-lg mb-8 flex justify-between;
 
   ._text_header {
-    @apply text-white text-2xl font-bold;
+    @apply text-white text-2xl font-bold flex items-center;
   }
 }

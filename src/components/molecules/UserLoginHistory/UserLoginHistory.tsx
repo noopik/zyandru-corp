@@ -12,6 +12,7 @@ const UserLoginHistory = () => {
       {users.length > 0 ? (
         users.map((user) => (
           <UserLogin
+            key={user.id}
             isUserLoggedIn
             id={user.id}
             name={user.name}

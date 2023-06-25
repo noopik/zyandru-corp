@@ -85,6 +85,8 @@ cd zyandru-corp
 npm install
 ```
 
+4. Duplicated `.env.example` files on root project and rename to `.env`
+
 ### Running application
 
 1. Run `npm run dev` for a dev server.

@@ -45,7 +45,7 @@ const UserLogin = ({
         <div
           className={`${
             isUserLoggedIn ? types['logged'] : types['unlogged']
-          }   flex gap-3 justify-center items-center p-3 rounded-lg`}
+          }   flex gap-3  items-center p-3 rounded-lg`}
         >
           <Image
             src={defaultImageNotFound}

@@ -40,7 +40,9 @@ const TextInput = ({
         value={value}
         {...props}
       />
-      {isError && <span className="_text_error">Lengkapi data</span>}
+      {isError && (
+        <span className="_text_error">Please fill in the required field</span>
+      )}
     </div>
   );
 };
