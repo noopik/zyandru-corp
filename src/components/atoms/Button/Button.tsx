@@ -9,7 +9,7 @@ type ButtonProps = {
   variant: 'secondary' | 'primary';
   className?: string;
   fullWidth?: boolean;
-  onClick: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: React.MouseEventHandler<HTMLButtonElement>;
   disabled?: boolean;
 };
 
