@@ -51,7 +51,6 @@
 - [x] Use CSS Preprocessor SASS with Tailwind CSS
 - [x] Atomic Design Methodology
 - [x] Strongly Typed Code (TypeScript)
-- [x] Creating a Storybook component
 - [x] Responsive on all common devices (Mobile first, Tablet, Laptop, and Desktop)
 - [x] Error handling
 - [x] Custom Hooks
