@@ -1,3 +1,4 @@
+import useStoreAuthUsers from './useStoreAuthUsers';
 import useStoreFormLogin from './useStoreFormLogin';
 
-export { useStoreFormLogin };
+export { useStoreFormLogin, useStoreAuthUsers };

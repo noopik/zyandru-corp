@@ -1,7 +1,7 @@
 import { Logo } from '@vhiweb/src/components/atoms';
 import Image from 'next/image';
 import React from 'react';
-import { FormLogin } from '../src/components/organism';
+import { FormLogin, LoginAs } from '../src/components/organism';
 /**
  * Renders the Login page.
  *
@@ -42,9 +42,7 @@ const Login: React.FC = (): JSX.Element => {
         </div>
       </div>
       <div className="_row">
-        <div className="_container p-8 md:py-8">
-          <h6 className="heading_secondary">Login as</h6>
-        </div>
+        <LoginAs />
       </div>
     </main>
   );

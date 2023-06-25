@@ -2,6 +2,7 @@ import { AppRouterInstance } from 'next/dist/shared/lib/app-router-context';
 import { create } from 'zustand';
 import axiosConfig from '../config/axios';
 import { toast } from 'react-toastify';
+import useStoreAuthUsers from './useStoreAuthUsers';
 
 interface FormLoginInterface {
   form: {
@@ -38,10 +39,13 @@ const useStoreFormLogin = create<FormLoginInterface>((set) => ({
     }));
   },
   actionPostLogin: (data, router, setIsLoading) => {
+    const { addUser } = useStoreAuthUsers.getState();
+
     setIsLoading(true);
     axiosConfig
       .post('/login', data)
       .then((res) => {
+        addUser(data['email'], data['password']);
         router.replace('/users');
       })
       .catch((err) => {
